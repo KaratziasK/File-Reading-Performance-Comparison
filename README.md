@@ -50,7 +50,7 @@ filename: The path to the .txt file you want to read. (It would be good to choos
 
 method: Choose 'S' or 's' for sequential reading, and 'I' or 'i' for interleaved reading.
 
-## Examples
+### Examples
 ```sh
 time ./fread long_file.txt S
 time ./read short_file.txt i
