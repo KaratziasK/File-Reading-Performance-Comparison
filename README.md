@@ -24,8 +24,8 @@ This project was part of a university course on Operating Systems, and the perfo
 
 ## Files
 
-- `fread_version.c`: Implements file reading using the `fread` function.
-- `read_version.c`: Implements file reading using the `read` system call.
+- `fread.c`: Implements file reading using the `fread` function.
+- `read.c`: Implements file reading using the `read` system call.
 
 ## Usage
 
