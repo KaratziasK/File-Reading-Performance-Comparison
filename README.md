@@ -2,12 +2,11 @@
 
 This project compares the performance of two methods for reading files in C: using the standard library function `fread` and using the system call `read`. The code is designed to read a file in two different ways: sequentially or interleaved, based on the user's input.
 
-**NOTE:** This project was part of a university course on Operating Systems, and the performance of each method was measured using files of different sizes (1 KB and 100 MB). The results were documented in a PDF report.
+**NOTE:** This project was part of a university course on Operating Systems at Harokopio University of Athens, and the performance of each method was measured using files of different sizes (1 KB and 100 MB). The results were documented in a PDF report.
 
 ## Table of Contents
 - Overview
 - Files
-- Usage
 - Compilation
 - Execution
 - Results
@@ -22,10 +21,7 @@ The user can choose to read the file sequentially or interleaved:
 - **Sequentially (S/s):** Reads the file from start to end.
 - **Interleaved (I/i):** Reads the file in an interleaved manner, alternating between the start and the end of the file towards the center.
 
-
-
 ## Files
-
 - `fread.c`: Implements file reading using the `fread` function.
 - `read.c`: Implements file reading using the `read` system call.
 
@@ -60,4 +56,11 @@ time ./fread long_file.txt S
 time ./read short_file.txt i
 ```
 ## Results
+### Example of result
+
+```sh
+real	0m0,009s
+user	0m0,001s
+sys	0m0,009s
+```
 The results of the experiments, including time taken for reading files of different sizes using both methods, are documented in the accompanying PDF report.
