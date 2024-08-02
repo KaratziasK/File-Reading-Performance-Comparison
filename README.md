@@ -59,7 +59,7 @@ time ./read short_file.txt i
 
 - **`real`**: Represents the actual time taken for the process to complete, including all overheads, waits, and multi-process interactions.
 - **`user`**: Reflects the time the CPU spends executing user instructions for the program, a measure of how intensive the program's calculations are.
-- **`sys`**: Reflects the time the CPU spends on behalf of the program in system mode, which involves handling tasks like I/O operations.
+- **`sys`**: Reflects the time the CPU spends on behalf of the program in kernel mode, which involves handling tasks like I/O operations.
 
 ## Results
 ### Example of result
