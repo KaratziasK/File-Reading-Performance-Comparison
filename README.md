@@ -52,8 +52,8 @@ For read_version:
 
 ## Examples
 ```sh
-./fread_version example.txt S
-./read_version example.txt i
+time ./fread_version long_file.txt S
+time ./read_version short_file.txt i
 ```
 ## Results
 The results of the experiments, including time taken for reading files of different sizes using both methods, are documented in the accompanying PDF report.
