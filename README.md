@@ -17,7 +17,7 @@ This project compares the performance of two methods for reading files in C: usi
 1. **Standard Library Method:** Uses `fread` for reading files.
 2. **System Call Method:** Uses `read` for reading files.
 
-The user can choose to read the file sequentially or interleaved:
+The user can choose to read the file sequentially or interleaved <method>:
 - **Sequentially (S/s):** Reads the file from start to end.
 - **Interleaved (I/i):** Reads the file in an interleaved manner, alternating between the start and the end of the file towards the center.
 
