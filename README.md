@@ -1,6 +1,6 @@
 # File Reading Performance Comparison (FREAD-READ)
 
-This project compares the performance of two methods for reading files in C: using the standard library function `fread` and using the system call `read`. The code is designed to read a file in two different ways: sequentially or interleaved, based on the user's input.
+This project compares the performance of two methods for reading files in C: using the standard library function `fread` and using the system call `read`. The code is designed to read a file in two different ways: sequentially or interleaved, based on the user's input.Update 
 
 **NOTE:** This project was part of a university course on Operating Systems at Harokopio University of Athens, and the performance of each method was measured using files of different sizes (1 KB and 100 MB). The results were documented in a PDF report.
 
@@ -17,7 +17,7 @@ This project compares the performance of two methods for reading files in C: usi
 1. **Standard Library Method:** Uses `fread` for reading files.
 2. **System Call Method:** Uses `read` for reading files.
 
-The user can choose to read the file sequentially or interleaved <method>:
+The user can choose to read the file sequentially or interleaved `method`:
 - **Sequentially (S/s):** Reads the file from start to end.
 - **Interleaved (I/i):** Reads the file in an interleaved manner, alternating between the start and the end of the file towards the center.
 
