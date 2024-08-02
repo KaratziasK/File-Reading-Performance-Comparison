@@ -26,8 +26,7 @@ The user can choose to read the file sequentially or interleaved `method`:
 - `read.c`: Implements file reading using the `read` system call.
 
 ### Compilation
-
-To compile the programs, use the following commands:
+To compile the programs, ensure you have a C compiler like gcc installed on your system. You can then use the following commands:
 
 ```sh
 gcc -o fread fread.c
