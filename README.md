@@ -46,9 +46,9 @@ For read version:
 ```sh
 time ./read <filename> <method>
 ```
-<filename>: The path to the .txt file you want to read. (It would be good to choose two files with enough difference in size that they have a noticeable difference in times. ** Ex. 1 KB - 100 MB **)
+'<filename>': The path to the .txt file you want to read. (It would be good to choose two files with enough difference in size that they have a noticeable difference in times. ** Ex. 1 KB - 100 MB **)
 
-<method> : Choose 'S' or 's' for sequential reading, and 'I' or 'i' for interleaved reading.
+'<method>': Choose 'S' or 's' for sequential reading, and 'I' or 'i' for interleaved reading.
 
 ## Examples
 ```sh
