@@ -2,6 +2,8 @@
 
 This project compares the performance of two methods for reading files in C: using the standard library function `fread` and using the system call `read`. The code is designed to read a file in two different ways: sequentially or interleaved, based on the user's input.
 
+**NOTE:**This project was part of a university course on Operating Systems, and the performance of each method was measured using files of different sizes (1 KB and 100 MB). The results were documented in a PDF report.
+
 ## Table of Contents
 - Overview
 - Files
@@ -20,7 +22,7 @@ The user can choose to read the file sequentially or interleaved:
 - **Sequentially (S/s):** Reads the file from start to end.
 - **Interleaved (I/i):** Reads the file in an interleaved manner, alternating between the start and the end of the file towards the center.
 
-This project was part of a university course on Operating Systems, and the performance of each method was measured using files of different sizes (1 KB and 100 MB). The results were documented in a PDF report.
+
 
 ## Files
 
@@ -31,29 +33,31 @@ This project was part of a university course on Operating Systems, and the perfo
 
 To compile the programs, use the following commands:
 
-```bash
-gcc -o fread_version fread_version.c
-gcc -o read_version read_version.c
+```sh
+gcc -o fread fread.c
+```
+```sh
+gcc -o read read.c
 ```
 ## Execution
 To run the programs, use the following commands:
 
-For fread_version:
+For fread version:
 ```sh
-./fread_version <filename> <method>
+./fread <filename> <method>
 ```
 
-For read_version:
+For read version:
 ```sh
-./read_version <filename> <method>
+./read <filename> <method>
 ```
-<filename>: The path to the .txt file you want to read.
+<filename>: The path to the .txt file you want to read. (It would be good to choose two files with enough difference in size that they have a noticeable difference in times. `Ex. 1 KB - 100 MB`)
 <method>: Choose 'S' or 's' for sequential reading, and 'I' or 'i' for interleaved reading.
 
 ## Examples
 ```sh
-time ./fread_version long_file.txt S
-time ./read_version short_file.txt i
+time ./fread long_file.txt S
+time ./read short_file.txt i
 ```
 ## Results
 The results of the experiments, including time taken for reading files of different sizes using both methods, are documented in the accompanying PDF report.
